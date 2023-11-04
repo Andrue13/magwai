@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 116px;
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__logo {
+        width: 156px;
+        margin-right: 76px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__menu {
+        min-width: 828px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__contacts {
+        display: flex;
+        align-items:center;
+        height: 60px;
+    }
+
+}

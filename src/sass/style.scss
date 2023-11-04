@@ -1,4 +1,23 @@
+@import 'base/varialbles';
+
 html {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Mulish', sans-serif;
 }
+
+body {
+    background-color: #131313;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1720px;
+    margin: 0 auto;
+}
+
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/catalog'

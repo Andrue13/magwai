@@ -1,0 +1,255 @@
+@media (max-width: 1530px) {
+    .header {
+        &__item {
+            margin-right: 15px;
+        }
+    }
+}
+
+@media (max-width: 1364px) {
+    .button {
+        width: 220px;
+    }
+
+    .header {
+        &__item {
+            margin-right: 10px;
+        }
+
+        &__link {
+            font-size: 12px;
+        }
+
+        &__wrapper {
+            gap: 56px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .button {
+        width: 200px;
+    }
+
+    .header {
+        &__item {
+            margin-right: 8px;
+        }
+
+        &__link {
+            font-size: 11px;
+        }
+
+        &__wrapper {
+            gap: 38px;
+        }
+    }
+}
+
+@media (max-width:1080px) {
+    .header {
+        &__logo {
+            width: 100px;
+        }
+
+        &__wrapper {
+            gap: 25px;
+        }
+
+        &__item {
+            margin-right: 6px;
+        }
+
+        &__link {
+            font-size: 10px;
+        }
+
+        &__phone {
+            height: 50px;
+        }
+
+        &__contacts {
+            img {
+                height: 50px;
+            }
+        }
+    }
+
+    .button {
+        width: 170px;
+        height: 50px;
+        font-size: 11px;
+    }
+}
+
+
+
+@media (max-width:905px) {
+    .header {
+        height: 80px;
+
+        &__phone {
+            height: 40px;
+        }
+
+        &__contacts {
+            img {
+                height: 40px;
+            }
+        }
+    }
+
+    .button {
+        width: 140px;
+        height: 40px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width:860px) {
+    .button {
+        width: 100px;
+        height: 40px;
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 769px) {
+    .container {
+        max-width: 686px;
+    }
+
+    .header {
+        height: 117px;
+
+        &__menu {
+            position: fixed;
+            flex-direction: column;
+            justify-content: left;
+            align-items: flex-start;
+            top: 99px;
+            right: -100%;
+            width: 100%;
+            height: 100vh;
+            background-color: #131313;
+            z-index: 1;
+            margin: 0;
+            transition: 0.6s all;
+
+            &_active {
+                right: 0;
+            }
+        }
+
+        &__item {
+            margin-left: 50px;
+            margin-bottom: 15px;
+
+            &:first-child {
+                margin-top: 50px;
+            }
+        }
+
+        &__link {
+            text-align: left;
+            font-family: Montserrat;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%;
+            color: #131313;
+            /* Цвет текста */
+            -webkit-text-stroke: 1px rgba(80, 80, 80);
+            /* Толщина и цвет обводки */
+            text-stroke: rgba(80, 80, 80);
+
+            /* Толщина и цвет обводки (стандартное свойство) */
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        &__hamburger {
+            display: block;
+            position: absolute;
+            left: 49px;
+            top: 56px;
+            transform: translateY(-50%);
+            width: 37px;
+            height: 16px;
+
+            span {
+                display: block;
+                height: 4px;
+                width: 100%;
+                background-color: #FFFFFF;
+                margin-bottom: 4px;
+                transition: .5s all;
+            }
+
+            &_active {
+                span {
+                    margin-bottom: -4px;
+
+                    &:nth-child(1) {
+                        transform: translateY(3px) rotate(-45deg);
+                    }
+
+                    &:nth-child(2) {
+                        display: none;
+                    }
+
+                    &:nth-child(3) {
+                        transform: translateY(3px) rotate(45deg);
+                    }
+                }
+            }
+
+        }
+
+        &__logo {
+            transform: translateX(130px);
+            width: 156px;
+        }
+
+        &__phone {
+            height: 60px;
+        }
+
+        &__contacts {
+            margin-right: 36px;
+
+            img {
+                height: 60px;
+            }
+        }
+
+        .button {
+            width: 200px;
+            height: 60px;
+            font-size: 12px;
+        }
+    }
+
+    .promo {
+        &__header {
+            font-size: 38px;
+        }
+    }
+
+    .catalog {
+        &__wrapper {
+            gap: 20px;
+        }
+    }
+
+    .catalog-item {
+        width: 333px;
+    }
+}
+
+
+@media (max-width: 769px) {
+
+    
+}

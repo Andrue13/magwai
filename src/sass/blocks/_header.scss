@@ -6,11 +6,20 @@
 
     &__wrapper {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1060px;
+        gap: 76px;
+    }
+
+    &__hamburger {
+        display: none;
     }
 
     &__logo {
+        display: block;
         width: 156px;
-        margin-right: 76px;
+        // margin-right: 76px;
 
         img {
             width: 100%;
@@ -18,11 +27,20 @@
     }
 
     &__menu {
-        min-width: 828px;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         list-style-type: none;
+        padding: 0;
+    }
+
+    &__item {
+        margin-right: 42px;
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 
     &__link {
@@ -32,13 +50,18 @@
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
+
         &:hover {
             text-decoration: underline;
         }
     }
+
     &__contacts {
         display: flex;
-        align-items:center;
+        align-items: center;
+    }
+
+    &__phone {
         height: 60px;
     }
 

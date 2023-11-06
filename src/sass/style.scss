@@ -13,11 +13,13 @@ body {
 }
 
 .container {
-    max-width: 1720px;
+    max-width: 1750px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/buttons';
-@import 'blocks/catalog'
+@import 'blocks/catalog';
+@import 'blocks/media';

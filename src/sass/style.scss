@@ -1,4 +1,5 @@
 @import 'base/varialbles';
+@import 'base/mixins';
 
 html {
     font-family: 'Montserrat', sans-serif;
@@ -23,3 +24,4 @@ body {
 @import 'blocks/buttons';
 @import 'blocks/catalog';
 @import 'blocks/media';
+@import 'blocks/modal';

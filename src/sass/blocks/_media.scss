@@ -8,7 +8,10 @@
 
 @media (max-width: 1364px) {
     .button {
-        width: 220px;
+        &_contact {
+            width: 220px;
+        }
+
     }
 
     .header {
@@ -28,7 +31,10 @@
 
 @media (max-width: 1200px) {
     .button {
-        width: 200px;
+        &_contact {
+            width: 200px;
+        }
+
     }
 
     .header {
@@ -76,13 +82,14 @@
     }
 
     .button {
-        width: 170px;
-        height: 50px;
-        font-size: 11px;
+        &_contact {
+            width: 170px;
+            height: 50px;
+            font-size: 11px;
+        }
+
     }
 }
-
-
 
 @media (max-width:905px) {
     .header {
@@ -100,17 +107,22 @@
     }
 
     .button {
-        width: 140px;
-        height: 40px;
-        font-size: 10px;
+        &_contact {
+            width: 140px;
+            height: 40px;
+            font-size: 10px;
+        }
+
     }
 }
 
 @media (max-width:860px) {
     .button {
-        width: 100px;
-        height: 40px;
-        font-size: 9px;
+        &_contact {
+            width: 100px;
+            font-size: 9px;
+        }
+
     }
 }
 
@@ -225,19 +237,46 @@
         }
 
         .button {
-            width: 200px;
-            height: 60px;
-            font-size: 12px;
+            &_contact {
+                width: 200px;
+                font-size: 12px;
+                height: 60px;
+                cursor: none;
+            }
         }
     }
 
     .promo {
+        min-height: 907px;
+
+        &__wrapper {
+            min-height: 907px;
+        }
+
+        &__box {
+            padding-top: 551px;
+            padding-bottom: 76px;
+        }
+
         &__header {
             font-size: 38px;
+
+        }
+    }
+    
+    .button {
+        &_promo {
+            margin-left: 10px;
         }
     }
 
     .catalog {
+        padding: 44px 0 156px 0;
+
+        &__title {
+            margin: 0 0 40px 0;
+        }
+
         &__wrapper {
             gap: 20px;
         }
@@ -249,7 +288,158 @@
 }
 
 
-@media (max-width: 769px) {
+@media (max-width: 360px) {
+    .container {
+        max-width: 328px;
+        padding: 0 16px;
+    }
 
-    
+    .header {
+        height: 72px;
+
+        &__wrapper {
+            width: 100%;
+        }
+
+        &__contacts {
+            display: none;
+        }
+
+        &__item {
+            margin-left: 18px;
+            margin-bottom: 15px;
+
+            &:first-child {
+                margin-top: 0px;
+            }
+        }
+
+        &__menu {
+            top: 72px;
+        }
+
+        &__contacts {
+            &_none {
+                display: block;
+                margin-top: 51px;
+            }
+        }
+
+        .button {
+            &_phone {
+                display: block;
+                margin-top: 6px;
+                width: 330px;
+                height: 60px;
+                margin-left: 15px;
+            }
+        }
+
+        &__img {
+            width: 330px;
+            height: 60px;
+            margin-left: 7px;
+        }
+
+
+
+        &__link {
+            font-size: 20px;
+        }
+
+        &__hamburger {
+            left: 15px;
+            top: 35px;
+            width: 30px;
+            height: 20px;
+
+            span {
+                height: 3px;
+                margin-bottom: 3px;
+            }
+
+            &_active {
+                span {
+                    margin-bottom: -3px;
+
+                    &:nth-child(-3) {
+                        transform: translateY(3px) rotate(45deg);
+                    }
+                }
+            }
+        }
+
+        &__logo {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            transform: none;
+            width: 112px;
+        }
+    }
+
+
+
+    .promo {
+        min-height: 495px;
+
+        &__wrapper {
+            min-height: 423px;
+        }
+
+        &__box {
+            min-height: 176px;
+            max-width: 328px;
+            padding-left: 14px;
+            padding: 266px 0 52px 0;
+        }
+
+        &__header {
+            font-size: 20px;
+        }
+
+        &__subheader {
+            width: 293px;
+            font-size: 14px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        &__img {
+            height: 47px;
+        }
+    }
+
+    .button {
+        &_promo {
+            width: 220px;
+            height: 47px;
+        }
+    }
+
+    .catalog {
+        padding: 48px 0 43px 0;
+
+        &__title {
+            font-size: 20px;
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+
+        &__loading {
+            img {
+                height: 60px;
+            }
+        }
+    }
+
+    .catalog-item {
+        &__button {
+            width: 280px;
+        }
+    }
+
+    .modal {
+        width: 200px;
+    }
 }

@@ -23,25 +23,34 @@
                         <span></span>
                         <span></span>
                     </div>
+
                     <a href="#" class="header__logo">
                         <img src="icons/logo.png" alt="logo">
                     </a>
-                    <nav class="header__official">
-                        <ul class="header__menu">
-                            <li class="header__item"><a href="#" class="header__link">УСЛУГИ</a></li>
-                            <li class="header__item"><a href="#" class="header__link">АБОНЕМЕНТЫ</a></li>
-                            <li class="header__item"><a href="#" class="header__link">ПОЧЕМУ МЫ</a> </li>
-                            <li class="header__item"><a href="#" class="header__link">ОБОРУДОВАНИЕ</a></li>
-                            <li class="header__item"><a href="#" class="header__link">АКЦИИ</a></li>
-                            <li class="header__item"><a href="#" class="header__link">FAQ</a></li>
-                            <li class="header__item"><a href="#" class="header__link">КОНТАКТЫ</a></li>
-                        </ul>
-                    </nav>
                 </div>
+                <nav class="header__official">
+                    <ul class="header__menu">
+                        <li class="header__item"><a href="#" class="header__link">УСЛУГИ</a></li>
+                        <li class="header__item"><a href="#" class="header__link">АБОНЕМЕНТЫ</a></li>
+                        <li class="header__item"><a href="#" class="header__link">ПОЧЕМУ МЫ</a> </li>
+                        <li class="header__item"><a href="#" class="header__link">ОБОРУДОВАНИЕ</a></li>
+                        <li class="header__item"><a href="#" class="header__link">АКЦИИ</a></li>
+                        <li class="header__item"><a href="#" class="header__link">FAQ</a></li>
+                        <li class="header__item"><a href="#" class="header__link">КОНТАКТЫ</a></li>
+                        <li class="header__contacts header__contacts_none">
+                            <a class="header__phone" href="tel:+74999999999"><img class="header__img"
+                                    src="icons/Rectangle2.png" alt="phone number"></a>
+                            <button data-modal="consultation" class="button button_phone">
+                                <span class="button__span">ОСТАВИТЬ ЗАЯВКУ</span>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+
                 <div class="header__contacts">
                     <a class="header__phone" href="tel:+74999999999"><img src="icons/Rectangle7.png"
                             alt="phone number"></a>
-                    <button class="button">
+                    <button data-modal="consultation" class="button button_contact">
                         <span class="button__span">ОСТАВИТЬ ЗАЯВКУ</span>
                     </button><img src="icons/Rectangle3.svg" alt="/">
                 </div>
@@ -52,11 +61,11 @@
                 <div class="promo__box">
                     <h1 class="promo__header">Полет Илона Маска
                         и DOGIE COIN</h1>
-                    <h2 class="promo__subheader">В прошлый четверг все офигели от полета DOGIE COIN на марс.</h2>
+                    <h2 class="promo__subheader">В прошлый четверг все офигели от полета DOGIE COIN на Марс.</h2>
                     <div class="promo__button">
-                        <button class="pro__button">
+                        <button data-modal="consultation" class="button button_promo">
                             <span class="button__span">ОСТАВИТЬ ЗАЯВКУ</span>
-                        </button><img src="icons/Rectangle3.svg" alt="/">
+                        </button><img class="promo__img" src="icons/Rectangle3.svg" alt="/">
                     </div>
                 </div>
             </div>
@@ -67,7 +76,7 @@
             <h2 class="catalog__title">
                 Карточки
             </h2>
-            <div class="catalog__wrapper">
+            <div class="catalog__wrapper" id="catalogCard">
                 <div class="catalog-item">
                     <img src="img/Bitmap.png" alt="coins">
                     <h2 class="catalog-item__title">bridge</h2>
@@ -170,10 +179,30 @@
                 </div>
             </div>
             <div class="catalog__loading">
-                <button class="pro__button"><span class="button__span"> ЗАГРУЗИТЬ ЕЩЕ</span></button><img src="icons/Rectangle3.svg" alt="/">
+                <button id="lauding" class="button button_louding"><span class="button__span">ЗАГРУЗИТЬ
+                        ЕЩЕ</span></button><img src="icons/Rectangle3.svg" alt="/">
             </div>
         </div>
     </section>
+
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__subtitle">Просто заполните форму заявки
+            </div>
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+            <form id="consultation-form" class="feed-form feed-form_mt25" action="#">
+                <div class="modal__close">&times;</div>
+                <input name="name" type="text" placeholder="Ваше имя">
+                <input name="phone" placeholder="Ваш телефон">
+                <input name="email" type="email" placeholder="Ваш E-mail">
+                <button class="button  button_submit">ОСТАВИТЬ ЗАЯВКУ</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

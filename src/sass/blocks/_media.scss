@@ -1,130 +1,130 @@
-@media (max-width: 1530px) {
-    .header {
-        &__item {
-            margin-right: 15px;
-        }
-    }
-}
+// @media (max-width: 1530px) {
+//     .header {
+//         &__item {
+//             margin-right: 15px;
+//         }
+//     }
+// }
 
-@media (max-width: 1364px) {
-    .button {
-        &_contact {
-            width: 220px;
-        }
+// @media (max-width: 1364px) {
+//     .button {
+//         &_contact {
+//             width: 220px;
+//         }
 
-    }
+//     }
 
-    .header {
-        &__item {
-            margin-right: 10px;
-        }
+//     .header {
+//         &__item {
+//             margin-right: 10px;
+//         }
 
-        &__link {
-            font-size: 12px;
-        }
+//         &__link {
+//             font-size: 12px;
+//         }
 
-        &__wrapper {
-            gap: 56px;
-        }
-    }
-}
+//         &__wrapper {
+//             gap: 56px;
+//         }
+//     }
+// }
 
-@media (max-width: 1200px) {
-    .button {
-        &_contact {
-            width: 200px;
-        }
+// @media (max-width: 1200px) {
+//     .button {
+//         &_contact {
+//             width: 200px;
+//         }
 
-    }
+//     }
 
-    .header {
-        &__item {
-            margin-right: 8px;
-        }
+//     .header {
+//         &__item {
+//             margin-right: 8px;
+//         }
 
-        &__link {
-            font-size: 11px;
-        }
+//         &__link {
+//             font-size: 11px;
+//         }
 
-        &__wrapper {
-            gap: 38px;
-        }
-    }
-}
+//         &__wrapper {
+//             gap: 38px;
+//         }
+//     }
+// }
 
-@media (max-width:1080px) {
-    .header {
-        &__logo {
-            width: 100px;
-        }
+// @media (max-width:1080px) {
+//     .header {
+//         &__logo {
+//             width: 100px;
+//         }
 
-        &__wrapper {
-            gap: 25px;
-        }
+//         &__wrapper {
+//             gap: 25px;
+//         }
 
-        &__item {
-            margin-right: 6px;
-        }
+//         &__item {
+//             margin-right: 6px;
+//         }
 
-        &__link {
-            font-size: 10px;
-        }
+//         &__link {
+//             font-size: 10px;
+//         }
 
-        &__phone {
-            height: 50px;
-        }
+//         &__phone {
+//             height: 50px;
+//         }
 
-        &__contacts {
-            img {
-                height: 50px;
-            }
-        }
-    }
+//         &__contacts {
+//             img {
+//                 height: 50px;
+//             }
+//         }
+//     }
 
-    .button {
-        &_contact {
-            width: 170px;
-            height: 50px;
-            font-size: 11px;
-        }
+//     .button {
+//         &_contact {
+//             width: 170px;
+//             height: 50px;
+//             font-size: 11px;
+//         }
 
-    }
-}
+//     }
+// }
 
-@media (max-width:905px) {
-    .header {
-        height: 80px;
+// @media (max-width:905px) {
+//     .header {
+//         height: 80px;
 
-        &__phone {
-            height: 40px;
-        }
+//         &__phone {
+//             height: 40px;
+//         }
 
-        &__contacts {
-            img {
-                height: 40px;
-            }
-        }
-    }
+//         &__contacts {
+//             img {
+//                 height: 40px;
+//             }
+//         }
+//     }
 
-    .button {
-        &_contact {
-            width: 140px;
-            height: 40px;
-            font-size: 10px;
-        }
+//     .button {
+//         &_contact {
+//             width: 140px;
+//             height: 40px;
+//             font-size: 10px;
+//         }
 
-    }
-}
+//     }
+// }
 
-@media (max-width:860px) {
-    .button {
-        &_contact {
-            width: 100px;
-            font-size: 9px;
-        }
+// @media (max-width:860px) {
+//     .button {
+//         &_contact {
+//             width: 100px;
+//             font-size: 9px;
+//         }
 
-    }
-}
+//     }
+// }
 
 @media (max-width: 769px) {
     .container {
@@ -242,6 +242,9 @@
                 font-size: 12px;
                 height: 60px;
                 cursor: none;
+                ::after {
+                    left: 189px;
+                }
             }
         }
     }
@@ -329,10 +332,12 @@
             &_phone {
                 display: block;
                 margin-top: 6px;
-                width: 330px;
+                width: 92%;
                 height: 60px;
-                margin-left: 15px;
+                margin-left: 21px;
             }
+            
+           
         }
 
         &__img {
@@ -405,6 +410,8 @@
             margin-top: 20px;
         }
 
+
+
         &__img {
             height: 47px;
         }
@@ -414,6 +421,11 @@
         &_promo {
             width: 220px;
             height: 47px;
+            ::after {
+                content: url('../icons/Rectangle3mobile.png');
+                top: -17px;
+                left: 211px;
+            } 
         }
     }
 

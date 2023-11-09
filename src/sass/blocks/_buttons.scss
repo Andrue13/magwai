@@ -12,6 +12,32 @@
     transition: 0.5s all;
     transform: skewX(-17deg);
 
+    &_promo {
+        ::after {
+            content: url('../icons/Rectangle3.png');
+            position: absolute;
+            top: -23px;
+            left: 270px;
+        } 
+    }
+
+    &_contact {
+        ::after {
+            content: url('../icons/Rectangle3.png');
+            position: absolute;
+            top: -23px;
+            left: 270px;
+        }
+    }
+    &_louding {
+        ::after {
+            content: url('../icons/Rectangle3.png');
+            position: absolute;
+            top: -23px;
+            left: 270px;
+        }
+    }
+
     &__span {
         display: block;
         transform: skewX(17deg);
@@ -22,13 +48,13 @@
         border: 4px solid #d0d0d0;
     }
 
-    
+
     &_submit {
-        width: 200px;
+        width: 113%;
         transition: none;
         transform: none;
-        margin-left: 45px;
+        margin-left: 67px;
         margin-top: 15px;
     }
 
-}    
+}

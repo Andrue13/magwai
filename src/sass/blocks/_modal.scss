@@ -137,5 +137,11 @@
             }
         }
     }
+    .button {
+        &_submit {
+            width: 152%;
+            margin-left: 52px;
+        }
+    }
 
 }
